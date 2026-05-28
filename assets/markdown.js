@@ -73,21 +73,34 @@
     renderNode(node, node.textContent);
   });
 
-  document.querySelectorAll("[data-markdown-src]").forEach(function (node) {
-    var source = node.getAttribute("data-markdown-src");
+  function loadMarkdownDocuments(messages) {
+    document.querySelectorAll("[data-markdown-src]").forEach(function (node) {
+      var source = node.getAttribute("data-markdown-src");
+      var failedText = messages && messages.legal && messages.legal.failed
+        ? messages.legal.failed
+        : "Failed to load data.";
 
-    fetch(source)
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error("Could not load " + source);
-        }
-        return response.text();
-      })
-      .then(function (markdown) {
-        renderNode(node, markdown);
-      })
-      .catch(function () {
-        node.innerHTML = "<p>Failed to load data.</p>";
-      });
+      fetch(source)
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error("Could not load " + source);
+          }
+          return response.text();
+        })
+        .then(function (markdown) {
+          renderNode(node, markdown);
+        })
+        .catch(function () {
+          node.innerHTML = "<p>" + inline(failedText) + "</p>";
+        });
+    });
+  }
+
+  window.addEventListener("i18n:ready", function (event) {
+    loadMarkdownDocuments(event.detail && event.detail.messages);
   });
+
+  if (!document.querySelector("[data-markdown-key]")) {
+    loadMarkdownDocuments({});
+  }
 }());

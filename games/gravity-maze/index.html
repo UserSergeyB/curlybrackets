@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-page-title="meta.gameTitle" data-page-description="meta.gameDescription">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,76 +9,77 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="../../index.html" aria-label="Curly Brackets home">
+    <a class="brand" href="../../index.html" aria-label="Curly Brackets home" data-i18n-aria-label="site.homeAria">
       <span class="brand-mark">{ }</span>
-      <span>Curly Brackets</span>
+      <span data-i18n="site.name">Curly Brackets</span>
     </a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a aria-current="page" href="index.html">Gravity Maze</a>
+    <nav class="main-nav" aria-label="Main navigation" data-i18n-aria-label="nav.main">
+      <a aria-current="page" href="index.html" data-i18n="nav.gravityMaze">Gravity Maze</a>
     </nav>
   </header>
 
   <main class="page">
-    <a class="back-link" href="../../index.html">Back to home</a>
+    <a class="back-link" href="../../index.html" data-i18n="game.backHome">Back to home</a>
 
     <section class="game-hero">
       <div>
-        <p class="eyebrow">Puzzle game</p>
-        <h1>Gravity Maze</h1>
-        <p class="lead">
+        <p class="eyebrow" data-i18n="game.eyebrow">Puzzle game</p>
+        <h1 data-i18n="game.title">Gravity Maze</h1>
+        <p class="lead" data-i18n="game.description">
           Rotate the direction of gravity, slide through narrow corridors, collect fragments,
           and land on the exit before the maze catches up with you.
         </p>
       </div>
-      <a class="button" href="../../downloads/gravity-maze.zip">Download Gravity Maze</a>
+      <a class="button" href="../../downloads/gravity-maze.zip" data-i18n="game.download">Download Gravity Maze</a>
     </section>
 
     <section class="section">
-      <h2>Screenshots</h2>
+      <h2 data-i18n="game.screenshotsTitle">Screenshots</h2>
       <div class="screenshot-grid">
         <figure class="screenshot">
-          <div class="mock-shot shot-one" role="img" aria-label="Gravity Maze level with blue player and yellow collectables">
-            <span></span><span></span><span></span><span></span><span></span><span></span>
-            <span></span><span class="wall"></span><span class="player"></span><span></span><span class="coin"></span><span></span>
-            <span></span><span class="wall"></span><span></span><span class="wall"></span><span></span><span></span>
-            <span class="coin"></span><span></span><span></span><span class="wall"></span><span class="goal"></span><span></span>
-          </div>
-          <figcaption>Early rotation puzzle</figcaption>
+          <img
+            class="screenshot-image"
+            src="screenshots/en/rotation-puzzle.svg"
+            alt="Gravity Maze level with blue player and yellow collectables"
+            data-i18n-src="game.shotOneSrc"
+            data-i18n-alt="game.shotOneLabel">
+          <figcaption data-i18n="game.shotOneCaption">Early rotation puzzle</figcaption>
         </figure>
         <figure class="screenshot">
-          <div class="mock-shot shot-two" role="img" aria-label="Gravity Maze level with diagonal route and exit">
-            <span class="wall"></span><span></span><span></span><span class="coin"></span><span></span><span></span>
-            <span></span><span></span><span class="wall"></span><span></span><span class="wall"></span><span></span>
-            <span></span><span class="player"></span><span></span><span></span><span class="wall"></span><span class="goal"></span>
-            <span></span><span class="wall"></span><span></span><span class="coin"></span><span></span><span></span>
-          </div>
-          <figcaption>Timing and route planning</figcaption>
+          <img
+            class="screenshot-image"
+            src="screenshots/en/route-planning.svg"
+            alt="Gravity Maze level with diagonal route and exit"
+            data-i18n-src="game.shotTwoSrc"
+            data-i18n-alt="game.shotTwoLabel">
+          <figcaption data-i18n="game.shotTwoCaption">Timing and route planning</figcaption>
         </figure>
       </div>
     </section>
 
     <section class="section text-panel">
-      <h2>About the game</h2>
-      <p>
+      <h2 data-i18n="game.aboutTitle">About the game</h2>
+      <p data-i18n="game.aboutParagraphOne">
         Gravity Maze is designed for quick sessions and careful problem solving. Each level
         asks you to think about walls, momentum, and the next safe landing before you rotate
         the maze.
       </p>
-      <p>
+      <p data-i18n="game.aboutParagraphTwo">
         The game is lightweight, readable on mobile screens, and built around short levels
         that gradually introduce new layouts and constraints.
       </p>
     </section>
 
     <section class="section link-row" aria-label="Gravity Maze links">
-      <a href="../../downloads/gravity-maze.zip">Download</a>
-      <a href="terms.html">Terms &amp; Conditions</a>
-      <a href="privacy.html">Privacy Policy</a>
+      <a href="../../downloads/gravity-maze.zip" data-i18n="game.downloadShort">Download</a>
+      <a href="terms.html" data-i18n="game.terms">Terms &amp; Conditions</a>
+      <a href="privacy.html" data-i18n="game.privacy">Privacy Policy</a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Copyright © 2026 Curly Brackets. All rights reserved.</p>
+    <p data-i18n="site.copyright">Copyright © 2026 Curly Brackets. All rights reserved.</p>
   </footer>
+  <script src="../../assets/i18n.js"></script>
 </body>
 </html>

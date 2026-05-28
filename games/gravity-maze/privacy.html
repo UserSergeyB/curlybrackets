@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-page-title="meta.privacyTitle" data-page-description="meta.privacyDescription">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,28 +9,29 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="../../index.html" aria-label="Curly Brackets home">
+    <a class="brand" href="../../index.html" aria-label="Curly Brackets home" data-i18n-aria-label="site.homeAria">
       <span class="brand-mark">{ }</span>
-      <span>Curly Brackets</span>
+      <span data-i18n="site.name">Curly Brackets</span>
     </a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Gravity Maze</a>
+    <nav class="main-nav" aria-label="Main navigation" data-i18n-aria-label="nav.main">
+      <a href="index.html" data-i18n="nav.gravityMaze">Gravity Maze</a>
     </nav>
   </header>
 
   <main class="page legal-page">
-    <a class="back-link" href="index.html">Back to Gravity Maze</a>
-    <h1>Gravity Maze</h1>
-    <p class="subtitle">Privacy Policy</p>
+    <a class="back-link" href="index.html" data-i18n="legal.backGame">Back to Gravity Maze</a>
+    <h1 data-i18n="legal.gameTitle">Gravity Maze</h1>
+    <p class="subtitle" data-i18n="legal.privacySubtitle">Privacy Policy</p>
 
-    <article class="markdown-body" data-markdown-src="privacy.md">
-      <p>Failed to load data.</p>
+    <article class="markdown-body" data-markdown-key="privacy">
+      <p data-i18n="legal.failed">Failed to load data.</p>
     </article>
   </main>
 
   <footer class="site-footer">
-    <p>Copyright © 2026 Curly Brackets. All rights reserved.</p>
+    <p data-i18n="site.copyright">Copyright © 2026 Curly Brackets. All rights reserved.</p>
   </footer>
+  <script src="../../assets/i18n.js"></script>
   <script src="../../assets/markdown.js"></script>
 </body>
 </html>

@@ -179,26 +179,22 @@ h3 {
   background: var(--surface-strong);
 }
 
-.cell.wall,
-.mock-shot .wall {
+.cell.wall {
   background: #1e293b;
 }
 
-.cell.player,
-.mock-shot .player {
+.cell.player {
   background: var(--primary);
   border-radius: 999px;
   box-shadow: inset 0 -8px 0 rgba(0, 0, 0, 0.12);
 }
 
-.cell.coin,
-.mock-shot .coin {
+.cell.coin {
   background: var(--warning);
   border-radius: 999px;
 }
 
-.cell.goal,
-.mock-shot .goal {
+.cell.goal {
   background: var(--accent);
 }
 
@@ -256,24 +252,15 @@ h3 {
   font-size: 0.95rem;
 }
 
-.mock-shot {
+.screenshot-image {
+  display: block;
+  width: 100%;
   aspect-ratio: 16 / 10;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 8px;
-  padding: 16px;
+  object-fit: cover;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background:
-    linear-gradient(135deg, rgba(37, 99, 235, 0.14), rgba(18, 185, 129, 0.12)),
-    #ffffff;
+  background: var(--surface);
   box-shadow: 0 14px 38px rgba(24, 39, 75, 0.1);
-}
-
-.mock-shot span {
-  border-radius: 7px;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(220, 229, 242, 0.78);
 }
 
 .text-panel {

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-page-title="meta.homeTitle" data-page-description="meta.homeDescription">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,27 +9,27 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Curly Brackets home">
+    <a class="brand" href="index.html" aria-label="Curly Brackets home" data-i18n-aria-label="site.homeAria">
       <span class="brand-mark">{ }</span>
-      <span>Curly Brackets</span>
+      <span data-i18n="site.name">Curly Brackets</span>
     </a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="games/gravity-maze/index.html">Gravity Maze</a>
+    <nav class="main-nav" aria-label="Main navigation" data-i18n-aria-label="nav.main">
+      <a href="games/gravity-maze/index.html" data-i18n="nav.gravityMaze">Gravity Maze</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Indie game developer</p>
-        <h1>Small puzzle games with clean rules and satisfying movement.</h1>
-        <p class="lead">
+        <p class="eyebrow" data-i18n="home.eyebrow">Indie game developer</p>
+        <h1 data-i18n="home.title">Small puzzle games with clean rules and satisfying movement.</h1>
+        <p class="lead" data-i18n="home.description">
           Curly Brackets builds compact games focused on readable mechanics, crisp feedback,
           and short sessions that still leave room for mastery.
         </p>
-        <a class="button" href="games/gravity-maze/index.html">View Gravity Maze</a>
+        <a class="button" href="games/gravity-maze/index.html" data-i18n="home.cta">View Gravity Maze</a>
       </div>
-      <div class="hero-art" aria-label="Abstract Gravity Maze game board preview">
+      <div class="hero-art" aria-label="Abstract Gravity Maze game board preview" data-i18n-aria-label="home.heroArtLabel">
         <div class="maze-card">
           <span class="cell wall"></span><span class="cell"></span><span class="cell coin"></span><span class="cell"></span><span class="cell wall"></span>
           <span class="cell"></span><span class="cell player"></span><span class="cell"></span><span class="cell wall"></span><span class="cell"></span>
@@ -42,7 +42,8 @@
   </main>
 
   <footer class="site-footer">
-    <p>Copyright © 2026 Curly Brackets. All rights reserved.</p>
+    <p data-i18n="site.copyright">Copyright © 2026 Curly Brackets. All rights reserved.</p>
   </footer>
+  <script src="assets/i18n.js"></script>
 </body>
 </html>
