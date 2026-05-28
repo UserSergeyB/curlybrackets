@@ -80,41 +80,44 @@ a:hover {
   white-space: nowrap;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  font-size: 0.95rem;
-  font-weight: 700;
-}
-
-.main-nav a[aria-current="page"] {
-  color: var(--text);
-}
-
 .language-switch {
   display: inline-flex;
-  padding: 3px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
+  align-items: center;
 }
 
 .language-switch button {
-  min-width: 38px;
-  min-height: 34px;
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
   border: 0;
-  border-radius: 6px;
   color: var(--muted);
   background: transparent;
   font: inherit;
-  font-weight: 800;
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1;
   cursor: pointer;
 }
 
+.language-switch button + button {
+  margin-left: 18px;
+}
+
+.language-switch button + button::before {
+  position: absolute;
+  top: 50%;
+  left: -11px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--muted);
+  content: "";
+  transform: translateY(-50%);
+}
+
 .language-switch button.is-active {
-  color: #ffffff;
-  background: var(--primary);
+  color: var(--primary);
 }
 
 .hero {
@@ -213,7 +216,7 @@ h3 {
 
 .game-card {
   display: grid;
-  grid-template-columns: minmax(260px, 44%) minmax(0, 1fr);
+  grid-template-columns: minmax(130px, 22%) minmax(0, 1fr);
   gap: 28px;
   align-items: center;
   padding: 20px;
@@ -257,11 +260,6 @@ h3 {
   background: var(--surface);
   margin-bottom: 28px;
   font-weight: 800;
-}
-
-.back-link::before {
-  content: "<";
-  margin-right: 8px;
 }
 
 .game-hero {
@@ -370,10 +368,6 @@ h3 {
     font-size: 0.96rem;
   }
 
-  .main-nav {
-    font-size: 0.9rem;
-  }
-
   .header-actions {
     gap: 12px;
   }
@@ -398,6 +392,10 @@ h3 {
   .game-card {
     grid-template-columns: 1fr;
     padding: 14px;
+  }
+
+  .game-card-image {
+    width: 50%;
   }
 
   .game-hero {

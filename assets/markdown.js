@@ -69,16 +69,45 @@
     node.innerHTML = render(markdown);
   }
 
+  function getFallbackLocale() {
+    return (document.documentElement.getAttribute("lang") || "en").toLowerCase().split("-")[0] || "en";
+  }
+
+  function getFailedText(node, messages) {
+    if (messages && messages.legal && messages.legal.failed) {
+      return messages.legal.failed;
+    }
+
+    return node.textContent.trim() || "Failed to load data.";
+  }
+
+  function ensureMarkdownSources(locale) {
+    document.querySelectorAll("[data-markdown-key]").forEach(function (node) {
+      if (node.getAttribute("data-markdown-src")) {
+        return;
+      }
+
+      node.setAttribute(
+        "data-markdown-src",
+        node.getAttribute("data-markdown-key") + "." + (locale || getFallbackLocale()) + ".md"
+      );
+    });
+  }
+
   document.querySelectorAll("[data-markdown]").forEach(function (node) {
     renderNode(node, node.textContent);
   });
 
-  function loadMarkdownDocuments(messages) {
+  function loadMarkdownDocuments(messages, locale, force) {
+    ensureMarkdownSources(locale);
+
     document.querySelectorAll("[data-markdown-src]").forEach(function (node) {
       var source = node.getAttribute("data-markdown-src");
-      var failedText = messages && messages.legal && messages.legal.failed
-        ? messages.legal.failed
-        : "Failed to load data.";
+      var failedText = getFailedText(node, messages);
+
+      if (!force && node.getAttribute("data-markdown-loaded-src") === source) {
+        return;
+      }
 
       fetch(source)
         .then(function (response) {
@@ -88,19 +117,24 @@
           return response.text();
         })
         .then(function (markdown) {
+          if (node.getAttribute("data-markdown-src") !== source) {
+            return;
+          }
+
+          node.setAttribute("data-markdown-loaded-src", source);
           renderNode(node, markdown);
         })
         .catch(function () {
+          node.removeAttribute("data-markdown-loaded-src");
           node.innerHTML = "<p>" + inline(failedText) + "</p>";
         });
     });
   }
 
   window.addEventListener("i18n:ready", function (event) {
-    loadMarkdownDocuments(event.detail && event.detail.messages);
+    var detail = event.detail || {};
+    loadMarkdownDocuments(detail.messages, detail.locale, true);
   });
 
-  if (!document.querySelector("[data-markdown-key]")) {
-    loadMarkdownDocuments({});
-  }
+  loadMarkdownDocuments({});
 }());
