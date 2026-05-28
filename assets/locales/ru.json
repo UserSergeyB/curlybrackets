@@ -1,11 +1,11 @@
 {
   "site": {
     "homeAria": "Curly Brackets home",
-    "copyright": "Copyright © 2026 Curly Brackets. Все права защищены."
+    "copyright": "Copyright © 2026 Curly Brackets Lab. Все права защищены."
   },
   "meta": {
-    "homeTitle": "Curly Brackets - разработчик игр",
-    "homeDescription": "Curly Brackets - небольшая студия, которая делает головоломки.",
+    "homeTitle": "Curly Brackets - инди разработчик игр",
+    "homeDescription": "Curly Brackets - студия инди разработчика, который стремится подарить миру интересные и увлекательные игры.",
     "gameTitle": "Gravity Maze - Curly Brackets",
     "gameDescription": "Gravity Maze - компактная головоломка о смене направления гравитации и поиске пути через лабиринт.",
     "termsTitle": "Условия использования Gravity Maze - Curly Brackets",
@@ -19,7 +19,7 @@
     "gravityMaze": "Gravity Maze"
   },
   "home": {
-    "eyebrow": "Разработчик игр",
+    "eyebrow": "Инди разработчик игр",
     "title": "Играйте в умные игры и получайте удовольствие",
     "description": "Curly Brackets - студия инди разработчика, который стремится подарить миру интересные и увлекательные игры.",
     "heroImageSrc": "home/assets/ru/hero.png",
