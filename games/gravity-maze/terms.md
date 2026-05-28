@@ -1,0 +1,31 @@
+## Terms & Conditions
+
+Last updated: May 28, 2026
+
+Please read these terms before downloading, installing, or using **Gravity Maze**.
+
+### Use of the game
+
+- You may install and play Gravity Maze for personal entertainment.
+- You may not redistribute, sell, reverse engineer, or modify the game unless written permission is provided by Curly Brackets.
+- You are responsible for using the game in a lawful and respectful way.
+
+### Ownership
+
+Gravity Maze, including its name, design, visuals, levels, code, and related materials, is owned by Curly Brackets or its licensors.
+
+### Availability and changes
+
+The game may be updated, changed, suspended, or discontinued at any time. Some features may depend on device compatibility, platform rules, or future updates.
+
+### Disclaimer
+
+Gravity Maze is provided **as is** without warranties of any kind. Curly Brackets does not guarantee that the game will be uninterrupted, error-free, or compatible with every device.
+
+### Limitation of liability
+
+To the maximum extent permitted by law, Curly Brackets is not liable for indirect, incidental, or consequential damages related to your use of Gravity Maze.
+
+### Contact
+
+For questions about these terms, contact Curly Brackets through the support channel listed on the download page or store listing.

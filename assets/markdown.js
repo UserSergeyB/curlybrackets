@@ -65,7 +65,29 @@
     return html.join("");
   }
 
+  function renderNode(node, markdown) {
+    node.innerHTML = render(markdown);
+  }
+
   document.querySelectorAll("[data-markdown]").forEach(function (node) {
-    node.innerHTML = render(node.textContent);
+    renderNode(node, node.textContent);
+  });
+
+  document.querySelectorAll("[data-markdown-src]").forEach(function (node) {
+    var source = node.getAttribute("data-markdown-src");
+
+    fetch(source)
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Could not load " + source);
+        }
+        return response.text();
+      })
+      .then(function (markdown) {
+        renderNode(node, markdown);
+      })
+      .catch(function () {
+        node.innerHTML = "<p>Failed to load data.</p>";
+      });
   });
 }());
