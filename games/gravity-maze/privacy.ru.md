@@ -1,35 +1,72 @@
-## Политика конфиденциальности
+**Privacy Policy**
 
-Последнее обновление: 28 мая 2026 г.
+This privacy policy is applicable to the Gravity Maze app (hereinafter referred to as "Application") for mobile devices, which was developed by (hereinafter referred to as "Service Provider") as a an Ad Supported service. This service is provided "AS IS".
 
-Эта Политика конфиденциальности объясняет, как **Gravity Maze** обрабатывает информацию при использовании игры.
+**What information does the Application obtain and how is it used?**
 
-### Какие данные мы собираем
+The Application acquires the information you supply when you download and register the Application. Registration with the Service Provider is not mandatory. However, bear in mind that you might not be able to utilize some of the features offered by the Application unless you register with them.
 
-Gravity Maze рассчитана на работу без создания аккаунта. Игра намеренно не собирает имена, адреса электронной почты, контакты, фотографии или точные данные о местоположении.
+The Service Provider may also use the information you provided them to contact you from time to time to provide you with important information, required notices and marketing promotions.
 
-### Автоматически создаваемые данные
+**What information does the Application collect automatically?**
 
-В зависимости от платформы или магазина, через который вы скачиваете игру, базовая техническая информация может обрабатываться этой платформой, например:
+In addition, the Application may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile devices unique device ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browsers you use, and information about the way you use the Application.
 
-- тип устройства и операционная система;
-- отчёты о сбоях и диагностика;
-- записи о скачивании, установке или покупке, которыми управляет магазин.
+**Does the Application collect precise real time location information of the device?**
 
-Curly Brackets использует эту информацию только если платформа предоставляет к ней доступ, и только для улучшения стабильности, совместимости и поддержки.
+This Application does not gather precise information about the location of your mobile device.
 
-### Сторонние сервисы
+**Does the Application use Artificial Intelligence (AI) technologies?**
 
-Gravity Maze может распространяться через сторонние магазины или хостинг-провайдеров. Их правила конфиденциальности регулируются их собственными политиками.
+The Application does not use Artificial Intelligence (AI) technologies to process your data or provide features.
 
-### Дети
+**Do third parties see and/or have access to information obtained by the Application?**
 
-Gravity Maze сознательно не собирает персональные данные детей. Если вы считаете, что ребёнок предоставил персональные данные, свяжитесь с нами, чтобы мы могли проверить и удалить их, если это требуется.
+Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.
 
-### Изменения
+Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:
 
-Эта политика может время от времени обновляться. Последняя версия будет опубликована на этой странице.
+*   [Google Play Services](https://www.google.com/policies/privacy/)
+*   [AdMob](https://support.google.com/admob/answer/6128543?hl=en)
 
-### Контакты
+The Service Provider may disclose User Provided and Automatically Collected Information:
 
-По вопросам конфиденциальности свяжитесь с Curly Brackets через канал поддержки, указанный на странице скачивания или в магазине приложения.
+*   as required by law, such as to comply with a subpoena, or similar legal process;
+*   when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;
+*   with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.
+
+**What are my opt-out rights?**
+
+You can halt all collection of information by the Application easily by uninstalling the Application. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.
+
+**What is the data retention policy and how can you manage your information?**
+
+The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. The Service Provider will retain Automatically Collected information for up to 24 months and thereafter may store it in aggregate. If you'd like the Service Provider to delete User Provided Data that you have provided via the Application, please contact them at user.sergey.b@gmail.com and we will respond in a reasonable time. Please note that some or all of the User Provided Data may be required in order for the Application to function properly.
+
+**How does the Application address children's privacy?**
+
+The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.
+
+The Application does not address anyone under the age of 13\. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discover that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (user.sergey.b@gmail.com) so that they will be able to take the necessary actions.
+
+**How is your information kept secure?**
+
+The Service Provider are concerned about safeguarding the confidentiality of your information. The Service Provider provide physical, electronic, and procedural safeguards to protect information we process and maintain. For example, we limit access to this information to authorized employees and contractors who need to know that information in order to operate, develop or improve their Application. Please be aware that, although we endeavor provide reasonable security for information we process and maintain, no security system can prevent all potential security breaches.
+
+**How will you be informed of changes to this Privacy Policy?**
+
+This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
+
+This privacy policy is effective as of 2026-05-21
+
+**How do you give your consent?**
+
+By using the Application, you are giving your consent to the Service Provider processing of your information as set forth in this Privacy Policy now and as amended by us. "Processing,” means using cookies on a computer/hand held device or using or touching information in any way, including, but not limited to, collecting, storing, deleting, using, combining and disclosing information.
+
+**How can you contact us?**
+
+If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at user.sergey.b@gmail.com.
+
+* * *
+
+This privacy policy page was generated by [App Privacy Policy Generator](https://app-privacy-policy-generator.nisrulz.com/)
