@@ -22,8 +22,14 @@
     "eyebrow": "Indie game developer",
     "title": "Small puzzle games with clean rules and satisfying movement.",
     "description": "Curly Brackets builds compact games focused on readable mechanics, crisp feedback, and short sessions that still leave room for mastery.",
-    "cta": "View Gravity Maze",
-    "heroArtLabel": "Abstract Gravity Maze game board preview"
+    "heroImageSrc": "assets/home/en/gravity-maze-hero.svg",
+    "heroImageAlt": "Abstract Gravity Maze game board preview",
+    "gamesTitle": "Games",
+    "gravityMazeCardTitle": "Gravity Maze",
+    "gravityMazeCardDescription": "A compact puzzle game about rotating gravity, reading the maze, and finding the cleanest route to the exit.",
+    "gravityMazeCardImageSrc": "games/gravity-maze/screenshots/en/rotation-puzzle.svg",
+    "gravityMazeCardImageAlt": "Gravity Maze screenshot with puzzle board, player, fragments, and exit.",
+    "gravityMazeCardCta": "View Gravity Maze"
   },
   "game": {
     "backHome": "Back to home",
@@ -38,6 +44,9 @@
     "shotTwoSrc": "screenshots/en/route-planning.svg",
     "shotTwoLabel": "Gravity Maze level with diagonal route and exit",
     "shotTwoCaption": "Timing and route planning",
+    "shotThreeSrc": "screenshots/en/portrait-challenge.svg",
+    "shotThreeLabel": "Portrait-oriented Gravity Maze level with a tall drop challenge",
+    "shotThreeCaption": "Portrait challenge layout",
     "aboutTitle": "About the game",
     "aboutParagraphOne": "Gravity Maze is designed for quick sessions and careful problem solving. Each level asks you to think about walls, momentum, and the next safe landing before you rotate the maze.",
     "aboutParagraphTwo": "The game is lightweight, readable on mobile screens, and built around short levels that gradually introduce new layouts and constraints.",

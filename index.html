@@ -10,8 +10,8 @@
 <body>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Curly Brackets home" data-i18n-aria-label="site.homeAria">
-      <span class="brand-mark">{ }</span>
-      <span data-i18n="site.name">Curly Brackets</span>
+      <img class="brand-logo" src="assets/brand.png" alt="" onerror="this.hidden = true; this.nextElementSibling.hidden = false;">
+      <span class="brand-fallback" hidden>Curly Brackets</span>
     </a>
     <nav class="main-nav" aria-label="Main navigation" data-i18n-aria-label="nav.main">
       <a href="games/gravity-maze/index.html" data-i18n="nav.gravityMaze">Gravity Maze</a>
@@ -27,17 +27,32 @@
           Curly Brackets builds compact games focused on readable mechanics, crisp feedback,
           and short sessions that still leave room for mastery.
         </p>
-        <a class="button" href="games/gravity-maze/index.html" data-i18n="home.cta">View Gravity Maze</a>
       </div>
-      <div class="hero-art" aria-label="Abstract Gravity Maze game board preview" data-i18n-aria-label="home.heroArtLabel">
-        <div class="maze-card">
-          <span class="cell wall"></span><span class="cell"></span><span class="cell coin"></span><span class="cell"></span><span class="cell wall"></span>
-          <span class="cell"></span><span class="cell player"></span><span class="cell"></span><span class="cell wall"></span><span class="cell"></span>
-          <span class="cell"></span><span class="cell wall"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span>
-          <span class="cell coin"></span><span class="cell"></span><span class="cell wall"></span><span class="cell goal"></span><span class="cell"></span>
-          <span class="cell wall"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell wall"></span>
+      <img
+        class="hero-image"
+        src="assets/home/en/gravity-maze-hero.svg"
+        alt="Abstract Gravity Maze game board preview"
+        data-i18n-src="home.heroImageSrc"
+        data-i18n-alt="home.heroImageAlt">
+    </section>
+
+    <section class="games-section" aria-labelledby="games-title">
+      <h2 id="games-title" data-i18n="home.gamesTitle">Games</h2>
+      <article class="game-card">
+        <img
+          class="game-card-image"
+          src="games/gravity-maze/screenshots/en/rotation-puzzle.svg"
+          alt="Gravity Maze screenshot with puzzle board, player, fragments, and exit."
+          data-i18n-src="home.gravityMazeCardImageSrc"
+          data-i18n-alt="home.gravityMazeCardImageAlt">
+        <div class="game-card-copy">
+          <h3 data-i18n="home.gravityMazeCardTitle">Gravity Maze</h3>
+          <p data-i18n="home.gravityMazeCardDescription">
+            A compact puzzle game about rotating gravity, reading the maze, and finding the cleanest route to the exit.
+          </p>
+          <a class="button" href="games/gravity-maze/index.html" data-i18n="home.gravityMazeCardCta">View Gravity Maze</a>
         </div>
-      </div>
+      </article>
     </section>
   </main>
 
