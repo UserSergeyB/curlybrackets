@@ -1,6 +1,6 @@
 (function () {
   var defaultLocale = "en";
-  var supportedLocales = ["en"];
+  var supportedLocales = ["en", "ru"];
 
   function getLocale() {
     var stored = localStorage.getItem("locale");
@@ -13,6 +13,23 @@
     return key.split(".").reduce(function (value, part) {
       return value && value[part];
     }, messages);
+  }
+
+  function getAssetBase() {
+    var script = document.currentScript || document.querySelector('script[src$="assets/i18n.js"], script[src$="/i18n.js"]');
+    return script
+      ? new URL(".", script.src).href
+      : new URL("assets/", window.location.href).href;
+  }
+
+  function loadLocale(locale) {
+    return fetch(new URL("locales/" + locale + ".json", getAssetBase()).href)
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Could not load locale " + locale);
+        }
+        return response.json();
+      });
   }
 
   function applyMessages(messages, locale) {
@@ -76,6 +93,30 @@
     });
   }
 
+  function updateLocaleControls(locale) {
+    document.querySelectorAll("[data-locale-option]").forEach(function (button) {
+      var isActive = button.getAttribute("data-locale-option") === locale;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", isActive ? "true" : "false");
+    });
+  }
+
+  function bindLocaleControls(locale) {
+    updateLocaleControls(locale);
+
+    document.querySelectorAll("[data-locale-option]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var nextLocale = button.getAttribute("data-locale-option");
+        if (nextLocale === locale || supportedLocales.indexOf(nextLocale) === -1) {
+          return;
+        }
+
+        localStorage.setItem("locale", nextLocale);
+        window.location.reload();
+      });
+    });
+  }
+
   function emitReady(locale, messages) {
     window.dispatchEvent(new CustomEvent("i18n:ready", {
       detail: {
@@ -87,18 +128,10 @@
 
   var locale = getLocale();
 
-  fetch("../../assets/locales/" + locale + ".json")
-    .catch(function () {
-      return fetch("assets/locales/" + locale + ".json");
-    })
-    .then(function (response) {
-      if (!response.ok) {
-        throw new Error("Could not load locale " + locale);
-      }
-      return response.json();
-    })
+  loadLocale(locale)
     .then(function (messages) {
       applyMessages(messages, locale);
+      bindLocaleControls(locale);
       emitReady(locale, messages);
     })
     .catch(function () {
@@ -107,15 +140,10 @@
         return;
       }
 
-      fetch("../../assets/locales/" + defaultLocale + ".json")
-        .catch(function () {
-          return fetch("assets/locales/" + defaultLocale + ".json");
-        })
-        .then(function (response) {
-          return response.json();
-        })
+      loadLocale(defaultLocale)
         .then(function (messages) {
           applyMessages(messages, defaultLocale);
+          bindLocaleControls(defaultLocale);
           emitReady(defaultLocale, messages);
         })
         .catch(function () {

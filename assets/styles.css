@@ -52,6 +52,12 @@ a:hover {
   gap: 20px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -84,6 +90,31 @@ a:hover {
 
 .main-nav a[aria-current="page"] {
   color: var(--text);
+}
+
+.language-switch {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.language-switch button {
+  min-width: 38px;
+  min-height: 34px;
+  border: 0;
+  border-radius: 6px;
+  color: var(--muted);
+  background: transparent;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.language-switch button.is-active {
+  color: #ffffff;
+  background: var(--primary);
 }
 
 .hero {
@@ -345,6 +376,10 @@ h3 {
     font-size: 0.9rem;
   }
 
+  .header-actions {
+    gap: 12px;
+  }
+
   .hero {
     min-height: auto;
     grid-template-columns: 1fr;
@@ -410,6 +445,11 @@ h3 {
     flex-direction: column;
     gap: 10px;
     padding: 14px 0;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .button,

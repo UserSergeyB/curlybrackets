@@ -1,0 +1,65 @@
+{
+  "site": {
+    "name": "Curly Brackets",
+    "homeAria": "Curly Brackets home",
+    "copyright": "Copyright © 2026 Curly Brackets. Все права защищены."
+  },
+  "meta": {
+    "homeTitle": "Curly Brackets - разработчик игр",
+    "homeDescription": "Curly Brackets - небольшая студия, которая делает компактные головоломки.",
+    "gameTitle": "Gravity Maze - Curly Brackets",
+    "gameDescription": "Gravity Maze - компактная головоломка о смене направления гравитации и поиске пути через лабиринт.",
+    "termsTitle": "Условия использования Gravity Maze - Curly Brackets",
+    "termsDescription": "Условия использования Gravity Maze.",
+    "privacyTitle": "Политика конфиденциальности Gravity Maze - Curly Brackets",
+    "privacyDescription": "Политика конфиденциальности Gravity Maze."
+  },
+  "nav": {
+    "main": "Основная навигация",
+    "language": "Язык",
+    "gravityMaze": "Gravity Maze"
+  },
+  "home": {
+    "eyebrow": "Разработчик игр",
+    "title": "Небольшие головоломки с понятными правилами и приятным движением.",
+    "description": "Curly Brackets делает компактные игры с читаемыми механиками, точной обратной связью и короткими сессиями, в которых остаётся место для мастерства.",
+    "heroImageSrc": "assets/home/ru/gravity-maze-hero.svg",
+    "heroImageAlt": "Абстрактный превью-экран игрового поля Gravity Maze",
+    "gamesTitle": "Игры",
+    "gravityMazeCardTitle": "Gravity Maze",
+    "gravityMazeCardDescription": "Компактная головоломка о смене гравитации, чтении лабиринта и поиске самого чистого пути к выходу.",
+    "gravityMazeCardImageSrc": "games/gravity-maze/screenshots/ru/rotation-puzzle.svg",
+    "gravityMazeCardImageAlt": "Скриншот Gravity Maze с игровым полем, игроком, фрагментами и выходом.",
+    "gravityMazeCardCta": "Открыть Gravity Maze"
+  },
+  "game": {
+    "backHome": "Назад на главную",
+    "eyebrow": "Головоломка",
+    "title": "Gravity Maze",
+    "description": "Меняйте направление гравитации, скользите по узким коридорам, собирайте фрагменты и добирайтесь до выхода, пока лабиринт не застал вас врасплох.",
+    "download": "Скачать Gravity Maze",
+    "screenshotsTitle": "Скриншоты",
+    "shotOneSrc": "screenshots/ru/rotation-puzzle.svg",
+    "shotOneLabel": "Уровень Gravity Maze с синим игроком и жёлтыми фрагментами",
+    "shotOneCaption": "Первая головоломка с поворотом",
+    "shotTwoSrc": "screenshots/ru/route-planning.svg",
+    "shotTwoLabel": "Уровень Gravity Maze с диагональным маршрутом и выходом",
+    "shotTwoCaption": "Тайминг и планирование маршрута",
+    "shotThreeSrc": "screenshots/ru/portrait-challenge.svg",
+    "shotThreeLabel": "Портретный уровень Gravity Maze с испытанием на длинное падение",
+    "shotThreeCaption": "Портретная схема испытания",
+    "aboutTitle": "Об игре",
+    "aboutParagraphOne": "Gravity Maze рассчитана на короткие сессии и внимательное решение задач. Каждый уровень заставляет думать о стенах, инерции и следующей безопасной точке приземления до поворота лабиринта.",
+    "aboutParagraphTwo": "Игра лёгкая, хорошо читается на мобильных экранах и строится вокруг коротких уровней, которые постепенно вводят новые схемы и ограничения.",
+    "downloadShort": "Скачать",
+    "terms": "Условия использования",
+    "privacy": "Политика конфиденциальности"
+  },
+  "legal": {
+    "backGame": "Назад к Gravity Maze",
+    "gameTitle": "Gravity Maze",
+    "termsSubtitle": "Условия использования",
+    "privacySubtitle": "Политика конфиденциальности",
+    "failed": "Не удалось получить данные."
+  }
+}
