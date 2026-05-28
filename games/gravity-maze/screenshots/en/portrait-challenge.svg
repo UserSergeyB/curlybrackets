@@ -3,8 +3,8 @@
   <desc id="desc">A portrait-oriented Gravity Maze level with a tall puzzle board and gravity indicator.</desc>
   <rect width="800" height="1280" fill="#f8fbff"/>
   <rect x="48" y="48" width="704" height="1184" rx="32" fill="#ffffff" stroke="#dce5f2" stroke-width="4"/>
-  <text x="96" y="136" fill="#172033" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="44" font-weight="800">Gravity Maze</text>
-  <text x="96" y="184" fill="#637084" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26">Level 18 - Tall drop</text>
+  <text x="96" y="136" fill="#172033" font-family="'Google Sans', 'Product Sans', 'Segoe UI', Arial, sans-serif" font-size="44" font-weight="800">Gravity Maze</text>
+  <text x="96" y="184" fill="#637084" font-family="'Google Sans', 'Product Sans', 'Segoe UI', Arial, sans-serif" font-size="26">Level 18 - Tall drop</text>
   <g transform="translate(96 240)">
     <rect width="608" height="784" rx="24" fill="#edf4ff"/>
     <g transform="translate(28 28)">
@@ -50,6 +50,6 @@
     <rect width="608" height="96" rx="20" fill="#edf4ff" stroke="#dce5f2" stroke-width="3"/>
     <path d="M114 26v44" stroke="#2563eb" stroke-width="12" stroke-linecap="round"/>
     <path d="M94 54l20 20 20-20" fill="none" stroke="#2563eb" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="168" y="60" fill="#172033" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">GRAVITY DOWN</text>
+    <text x="168" y="60" fill="#172033" font-family="'Google Sans', 'Product Sans', 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="800">GRAVITY DOWN</text>
   </g>
 </svg>

@@ -3,8 +3,8 @@
   <desc id="desc">A stylized Gravity Maze game board with a blue player, yellow fragments, dark walls, and a green exit.</desc>
   <rect width="1280" height="800" fill="#f8fbff"/>
   <rect x="64" y="56" width="1152" height="688" rx="32" fill="#ffffff" stroke="#dce5f2" stroke-width="4"/>
-  <text x="112" y="132" fill="#172033" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="48" font-weight="800">Gravity Maze</text>
-  <text x="112" y="180" fill="#637084" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28">Level 04 - Rotate gravity to reach the exit</text>
+  <text x="112" y="132" fill="#172033" font-family="'Google Sans', 'Product Sans', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="800">Gravity Maze</text>
+  <text x="112" y="180" fill="#637084" font-family="'Google Sans', 'Product Sans', 'Segoe UI', Arial, sans-serif" font-size="28">Level 04 - Rotate gravity to reach the exit</text>
   <g transform="translate(160 238)">
     <rect width="800" height="448" rx="20" fill="#edf4ff"/>
     <g transform="translate(24 24)">
@@ -39,7 +39,7 @@
     <rect width="144" height="144" rx="24" fill="#edf4ff" stroke="#dce5f2" stroke-width="4"/>
     <path d="M72 32v78" stroke="#2563eb" stroke-width="14" stroke-linecap="round"/>
     <path d="M40 82l32 32 32-32" fill="none" stroke="#2563eb" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="72" y="198" fill="#172033" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="800">GRAVITY</text>
-    <text x="72" y="232" fill="#637084" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24">DOWN</text>
+    <text x="72" y="198" fill="#172033" text-anchor="middle" font-family="'Google Sans', 'Product Sans', 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800">GRAVITY</text>
+    <text x="72" y="232" fill="#637084" text-anchor="middle" font-family="'Google Sans', 'Product Sans', 'Segoe UI', Arial, sans-serif" font-size="24">DOWN</text>
   </g>
 </svg>

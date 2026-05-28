@@ -3,8 +3,8 @@
   <desc id="desc">A stylized Gravity Maze game board showing a route through walls toward a green exit.</desc>
   <rect width="1280" height="800" fill="#f8fbff"/>
   <rect x="64" y="56" width="1152" height="688" rx="32" fill="#ffffff" stroke="#dce5f2" stroke-width="4"/>
-  <text x="112" y="132" fill="#172033" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="48" font-weight="800">Gravity Maze</text>
-  <text x="112" y="180" fill="#637084" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28">Level 11 - Plan the landing before you turn</text>
+  <text x="112" y="132" fill="#172033" font-family="'Google Sans', 'Product Sans', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="800">Gravity Maze</text>
+  <text x="112" y="180" fill="#637084" font-family="'Google Sans', 'Product Sans', 'Segoe UI', Arial, sans-serif" font-size="28">Level 11 - Plan the landing before you turn</text>
   <g transform="translate(160 238)">
     <rect width="800" height="448" rx="20" fill="#edf4ff"/>
     <path d="M116 340C218 300 244 192 344 174C446 156 500 252 610 204" fill="none" stroke="#2563eb" stroke-width="18" stroke-linecap="round" stroke-dasharray="2 34"/>
@@ -40,7 +40,7 @@
     <rect width="176" height="152" rx="24" fill="#edf4ff" stroke="#dce5f2" stroke-width="4"/>
     <path d="M120 76H50" stroke="#12b981" stroke-width="14" stroke-linecap="round"/>
     <path d="M78 44L46 76l32 32" fill="none" stroke="#12b981" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="88" y="206" fill="#172033" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="800">NEXT TURN</text>
-    <text x="88" y="240" fill="#637084" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24">LEFT</text>
+    <text x="88" y="206" fill="#172033" text-anchor="middle" font-family="'Google Sans', 'Product Sans', 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800">NEXT TURN</text>
+    <text x="88" y="240" fill="#637084" text-anchor="middle" font-family="'Google Sans', 'Product Sans', 'Segoe UI', Arial, sans-serif" font-size="24">LEFT</text>
   </g>
 </svg>
